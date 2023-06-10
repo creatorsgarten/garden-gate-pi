@@ -5,4 +5,5 @@ services:
       - ./config.json:/app/config.json:ro
       - ./data:/app/.data
     restart: unless-stopped
-    networking: host
+    ports:
+      - 3000:3000
