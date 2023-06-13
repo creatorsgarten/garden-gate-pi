@@ -4,7 +4,7 @@ while true
 do
   if [ -e ota-updater/data/trigger ]
   then
-    rm ota-updater/data/trigger
+    sudo rm ota-updater/data/trigger
     echo "Update requested at $(date)" >> ota-updater/data/log
     ./scripts/update.sh >> ota-updater/data/log 2>&1
   fi
