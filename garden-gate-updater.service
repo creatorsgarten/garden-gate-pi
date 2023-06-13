@@ -8,7 +8,7 @@ WorkingDirectory=/home/garten/garden-gate-pi
 Restart=always
 RestartSec=10
 StartLimitInterval=0
-User=garten
+User=root
 
 [Install]
 WantedBy=multi-user.target
