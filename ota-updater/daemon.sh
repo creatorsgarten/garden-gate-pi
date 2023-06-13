@@ -6,7 +6,7 @@ do
   then
     rm ota-updater/data/trigger
     echo "Update requested at $(date)" >> ota-updater/data/log
-    ./scripts/update.sh >> ota-updater/data/log 2>&1
+    (sudo -u garten ./scripts/update.sh) >> ota-updater/data/log 2>&1
   fi
   sleep 30
 done

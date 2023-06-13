@@ -1,0 +1,15 @@
+[Unit]
+Description=Garden Gate updater
+After=network.target
+
+[Service]
+ExecStart=/home/garten/garden-gate-pi/ota-updater/daemon.sh
+WorkingDirectory=/home/garten/garden-gate-pi
+Restart=always
+RestartSec=10
+StartLimitIntervalSec=0
+User=garten
+
+[Install]
+WantedBy=multi-user.target
+
