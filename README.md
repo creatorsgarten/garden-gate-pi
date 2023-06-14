@@ -24,12 +24,10 @@ Configuration for Garden Gate on Raspberry Pi
     cd garden-gate-pi
     ```
 
-9. Create and edit `config.json` to set up the doors:
+9. Create and edit `config.json`:
 
-    ```sh
-    cp config.example.json config.json
-    vi config.json
-    ```
+    - [Start based on `config.example.json`](https://github.com/creatorsgarten/garden-gate/blob/main/config.example.json)
+    - Update `doors` array
 
 10. Run the service:
 
